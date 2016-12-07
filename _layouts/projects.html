@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="container mx-auto px-2">
+
+  {% include page_heading.html %}
+
+  <div class="prose mb-4 py-4">
+    <p>Here are my projects from WDI at General Assembly:</p>
+    <ul>
+      {% for project in site.projects %}
+        <li><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>

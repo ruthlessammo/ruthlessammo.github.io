@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<article class="container mx-auto px-2">
+
+  {% include page_heading.html %}
+
+  <div class="prose mb-4 py-4">
+    <h2>{{ page.subtitle }}</h2>
+    <h3><a href="{{page.heroku}}">View it here!</a></h3>
+    <img src="{{ page.image }}">
+    {{ content }}
+  </div>
+</article>
